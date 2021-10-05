@@ -18,15 +18,19 @@ public class Base {
         switch (operation) {
             case "+":
                 Operations addition = new Addition();
+               addition.showResult(x,y);
                 break;
             case "-":
-                System.out.printf("x - y = %.4f%n");
+                Operations substracion = new Substracion();
+                substracion.showResult(x,y);
                 break;
             case "*":
-                System.out.printf("x * y = %.4f%n");
+                Operations multiplication = new Multiplication();
+                multiplication.showResult(x,y);
                 break;
             case "/":
-                    System.out.printf("x / y = %.4f%n" );
+                Operations segmentation = new Segmentation();
+                segmentation.showResult(x,y);
                 break;
 
     }

@@ -8,6 +8,9 @@ public class Substracion implements Operations {
     public void showResult(Numbers FirstNumber, Numbers SecondNumber) {
         double firstNumber = FirstNumber.getNumberValue();
         double secondNumber = SecondNumber.getNumberValue();
-        System.out.printf("x - y = %.4f%n", (firstNumber - secondNumber));
+        StringBuilder result = new StringBuilder();
+        result.append(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+        System.out.println(result.toString());
+
     }
 }
